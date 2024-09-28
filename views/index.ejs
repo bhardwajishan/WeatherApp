@@ -21,7 +21,7 @@
         <% if(locals.data) {%>
             <div class="w-[70%] flex justify-around py-4 px-4 h-80 rounded-[30px] border-[4px]">
                 <div class="w-[32%] flex flex-col justify-center gap-6 items-center h-full bg-gray-600">
-                    <h1 class="text-5xl text-orange-500"><%= data.name %></h1>
+                    <h1 class="text-4xl text-orange-500"><%= data.name %> <span class="text-white"><%= parseInt(data.main.temp -273) %><sup>o</sup>C</span></h1>
                     <div class="flex justify-around gap-10">
                         <div class="text-center">
                             <h2 class="text-2xl text-white"><%= parseInt(data.main.temp_min -273) -1 %><sup class="text-[16px]">o</sup>C </h2>
